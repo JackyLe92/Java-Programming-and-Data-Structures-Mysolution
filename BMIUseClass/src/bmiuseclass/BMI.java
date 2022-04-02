@@ -13,6 +13,7 @@ public class BMI {
   private int age;
   private double weight;
   private double height;
+  private double inches;
   
   public static final double KILOGRAMS_PER_POUND = 0.45359237;
   public static final double METERS_PER_INCH = 0.0254;
@@ -29,6 +30,11 @@ public class BMI {
   
   public BMI(String name, double weight, double height) {
     this(name, 20, weight, height);
+  }
+  
+  public BMI (String name, int age, double weight, double height, double inches) {
+    this(name, 40, weight,height);
+    this.inches = inches;
   }
 
   public String getName() {
